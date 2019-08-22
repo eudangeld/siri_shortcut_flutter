@@ -22,7 +22,7 @@ import Intents
     
     public func initFlutterChannel(){
         let controller :FlutterViewController = window?.rootViewController as! FlutterViewController
-        let channel = FlutterMethodChannel(name: "dan.flutter.intent/siri", binaryMessenger: controller)
+        let channel = FlutterMethodChannel(name: "dan.flutter.intent/siri", binaryMessenger: controller as! FlutterBinaryMessenger)
         channel.setMethodCallHandler({
             (call:FlutterMethodCall, result:FlutterResult)-> Void in
             if call.method=="donateShortCut"{
