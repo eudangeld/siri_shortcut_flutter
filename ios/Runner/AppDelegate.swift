@@ -4,29 +4,52 @@ import Intents
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {
+    
+    
+    override func application(_ application: UIApplication, handle intent: INIntent, completionHandler: @escaping (INIntentResponse) -> Void) {
+        guard
+            intent is VoucherIntent else{
+                return
+        }
+        
+        let siriButtoncontroller = SiriButtonDelegate()
+        let rootViewController = window.rootViewController as? UINavigationController
+        rootViewController!.pushViewController(siriButtoncontroller, animated: true)
+        return
+        
+    }
+    
+
+
+    
   override func application(
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
     initFlutterChannel()
-    setSiritButton()
+
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
     
-    public func setSiritButton(){
-        let viewFactory = SiriButtonFactory()
-        registrar(forPlugin: "SomePlugin").register(viewFactory, withId: "SiriButton")
-    }
+    
     
     
     public func initFlutterChannel(){
-        let controller :FlutterViewController = window?.rootViewController as! FlutterViewController
-        let channel = FlutterMethodChannel(name: "dan.flutter.intent/siri", binaryMessenger: controller as! FlutterBinaryMessenger)
+        
+        let flutterViewCOntroller :FlutterViewController = window?.rootViewController as! FlutterViewController
+        let channel = FlutterMethodChannel(name: "dan.flutter.intent/siri", binaryMessenger: flutterViewCOntroller as FlutterBinaryMessenger)
+        let navController = UINavigationController(rootViewController: flutterViewCOntroller)
+        navController.isNavigationBarHidden = true
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        
+        let siriButtoncontroller = SiriButtonDelegate()
         channel.setMethodCallHandler({
             (call:FlutterMethodCall, result:FlutterResult)-> Void in
             if call.method=="donateShortCut"{
                 self.doneteShortCut()
+                navController.pushViewController(siriButtoncontroller, animated: true)
             }
             else{
                 result(FlutterMethodNotImplemented)
@@ -51,3 +74,6 @@ import Intents
         }
     }
 }
+
+
+

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
-		3767BB99230DDC6C00BA3967 /* SiriButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3767BB98230DDC6C00BA3967 /* SiriButtonFactory.swift */; };
 		3767BBA2230DE1A500BA3967 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBA1230DE1A500BA3967 /* IntentHandler.swift */; };
 		3767BBAB230DE1A600BA3967 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3767BBAA230DE1A600BA3967 /* IntentsUI.framework */; };
 		3767BBAE230DE1A600BA3967 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBAD230DE1A600BA3967 /* IntentViewController.swift */; };
@@ -20,6 +19,12 @@
 		3767BBC4230DE1BD00BA3967 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBAD230DE1A600BA3967 /* IntentViewController.swift */; };
 		3767BBC5230DE1BD00BA3967 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBAD230DE1A600BA3967 /* IntentViewController.swift */; };
 		3767BBC7230DE24000BA3967 /* Voucher.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBC6230DE24000BA3967 /* Voucher.intentdefinition */; };
+		37E2CEA4230EE49D00B6D219 /* SiriButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CEA3230EE49D00B6D219 /* SiriButtonDelegate.swift */; };
+		37E2CEA9230F0C5600B6D219 /* Voucher.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBC6230DE24000BA3967 /* Voucher.intentdefinition */; };
+		37E2CEAA230F0C5600B6D219 /* Voucher.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBC6230DE24000BA3967 /* Voucher.intentdefinition */; };
+		37E2CEAE230F0E9600B6D219 /* VoucherIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CEAD230F0E9600B6D219 /* VoucherIntentHandler.swift */; };
+		37E2CEAF230F0E9600B6D219 /* VoucherIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CEAD230F0E9600B6D219 /* VoucherIntentHandler.swift */; };
+		37E2CEB0230F0E9600B6D219 /* VoucherIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CEAD230F0E9600B6D219 /* VoucherIntentHandler.swift */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
 		3B80C3941E831B6300D905FE /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; };
 		3B80C3951E831B6300D905FE /* App.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B80C3931E831B6300D905FE /* App.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -79,7 +84,6 @@
 /* Begin PBXFileReference section */
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
-		3767BB98230DDC6C00BA3967 /* SiriButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriButtonFactory.swift; sourceTree = "<group>"; };
 		3767BB9A230DE16400BA3967 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		3767BB9F230DE1A500BA3967 /* Siri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Siri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3767BBA1230DE1A500BA3967 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		3767BBB0230DE1A600BA3967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		3767BBB2230DE1A600BA3967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3767BBC6230DE24000BA3967 /* Voucher.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Voucher.intentdefinition; sourceTree = "<group>"; };
+		37E2CEA3230EE49D00B6D219 /* SiriButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriButtonDelegate.swift; sourceTree = "<group>"; };
+		37E2CEAD230F0E9600B6D219 /* VoucherIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherIntentHandler.swift; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
 		3B80C3931E831B6300D905FE /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = App.framework; path = Flutter/App.framework; sourceTree = "<group>"; };
 		74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Runner-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -138,6 +144,7 @@
 			children = (
 				3767BBA1230DE1A500BA3967 /* IntentHandler.swift */,
 				3767BBA3230DE1A500BA3967 /* Info.plist */,
+				37E2CEAD230F0E9600B6D219 /* VoucherIntentHandler.swift */,
 			);
 			path = Siri;
 			sourceTree = "<group>";
@@ -209,7 +216,7 @@
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
-				3767BB98230DDC6C00BA3967 /* SiriButtonFactory.swift */,
+				37E2CEA3230EE49D00B6D219 /* SiriButtonDelegate.swift */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -399,6 +406,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E2CEA9230F0C5600B6D219 /* Voucher.intentdefinition in Sources */,
+				37E2CEAF230F0E9600B6D219 /* VoucherIntentHandler.swift in Sources */,
 				3767BBC4230DE1BD00BA3967 /* IntentViewController.swift in Sources */,
 				3767BBA2230DE1A500BA3967 /* IntentHandler.swift in Sources */,
 			);
@@ -409,7 +418,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3767BBC2230DE1B800BA3967 /* IntentHandler.swift in Sources */,
+				37E2CEB0230F0E9600B6D219 /* VoucherIntentHandler.swift in Sources */,
 				3767BBAE230DE1A600BA3967 /* IntentViewController.swift in Sources */,
+				37E2CEAA230F0C5600B6D219 /* Voucher.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,11 +429,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3767BBC5230DE1BD00BA3967 /* IntentViewController.swift in Sources */,
-				3767BB99230DDC6C00BA3967 /* SiriButtonFactory.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				3767BBC3230DE1B900BA3967 /* IntentHandler.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				37E2CEA4230EE49D00B6D219 /* SiriButtonDelegate.swift in Sources */,
 				3767BBC7230DE24000BA3967 /* Voucher.intentdefinition in Sources */,
+				37E2CEAE230F0E9600B6D219 /* VoucherIntentHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

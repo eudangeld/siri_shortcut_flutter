@@ -8,11 +8,13 @@
 
 import Intents
 
+
 class IntentHandler: INExtension {
-    
     override func handler(for intent: INIntent) -> Any {
-        print("Intent handler")
-        return self
+        print("IntentHandler handler")
+        guard intent is VoucherIntent else{
+            fatalError("Intent not found")
+        }
+        return VoucherIntentHandler()
     }
-   
 }
