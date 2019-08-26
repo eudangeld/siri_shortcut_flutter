@@ -42,6 +42,10 @@ class _MyHomePageState extends State<MyHomePage> {
           MaterialButton(
             child: Text("Call Native Screen"),
             onPressed: () => donateShortcut(),
+          ),
+          MaterialButton(
+            child: Text("Call React native screen"),
+            onPressed: () => callreactNativeScreen(),
           )
         ],
       )),
@@ -50,5 +54,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> donateShortcut() async {
     platform.invokeMethod('donateShortCut');
+  }
+
+  Future<void> callreactNativeScreen() async {
+    platform.invokeMethod('callreactnative');
   }
 }

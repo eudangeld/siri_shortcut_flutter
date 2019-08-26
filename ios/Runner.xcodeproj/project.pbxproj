@@ -19,6 +19,12 @@
 		3767BBC4230DE1BD00BA3967 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBAD230DE1A600BA3967 /* IntentViewController.swift */; };
 		3767BBC5230DE1BD00BA3967 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBAD230DE1A600BA3967 /* IntentViewController.swift */; };
 		3767BBC7230DE24000BA3967 /* Voucher.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBC6230DE24000BA3967 /* Voucher.intentdefinition */; };
+		379BD2B323146659003E5EF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379BD2B223146659003E5EF6 /* AppDelegate.swift */; };
+		379BD2B523146659003E5EF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379BD2B423146659003E5EF6 /* ViewController.swift */; };
+		379BD2B823146659003E5EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379BD2B623146659003E5EF6 /* Main.storyboard */; };
+		379BD2BA2314665A003E5EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 379BD2B92314665A003E5EF6 /* Assets.xcassets */; };
+		379BD2BD2314665A003E5EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 379BD2BB2314665A003E5EF6 /* LaunchScreen.storyboard */; };
+		379BD2C5231466AE003E5EF6 /* rn.app in Resources */ = {isa = PBXBuildFile; fileRef = 379BD2B023146659003E5EF6 /* rn.app */; };
 		37E2CEA4230EE49D00B6D219 /* SiriButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2CEA3230EE49D00B6D219 /* SiriButtonDelegate.swift */; };
 		37E2CEA9230F0C5600B6D219 /* Voucher.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBC6230DE24000BA3967 /* Voucher.intentdefinition */; };
 		37E2CEAA230F0C5600B6D219 /* Voucher.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3767BBC6230DE24000BA3967 /* Voucher.intentdefinition */; };
@@ -35,6 +41,7 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		CAF5E1997C80C3595A68E3ED /* libPods-Runner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D19B23A9009A80F372A0F9 /* libPods-Runner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3767BB9E230DE1A500BA3967;
 			remoteInfo = Siri;
+		};
+		379BD2C923147FC4003E5EF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97C146E61CF9000F007C117D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 379BD2AF23146659003E5EF6;
+			remoteInfo = rn;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -84,6 +98,8 @@
 /* Begin PBXFileReference section */
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
 		1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		26AD7230B39DA8C030A46E61 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
+		2B288DD7014036B66DEEBE9E /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		3767BB9A230DE16400BA3967 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
 		3767BB9F230DE1A500BA3967 /* Siri.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Siri.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3767BBA1230DE1A500BA3967 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
@@ -94,6 +110,13 @@
 		3767BBB0230DE1A600BA3967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		3767BBB2230DE1A600BA3967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3767BBC6230DE24000BA3967 /* Voucher.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Voucher.intentdefinition; sourceTree = "<group>"; };
+		379BD2B023146659003E5EF6 /* rn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		379BD2B223146659003E5EF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		379BD2B423146659003E5EF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		379BD2B723146659003E5EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		379BD2B92314665A003E5EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		379BD2BC2314665A003E5EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		379BD2BE2314665A003E5EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37E2CEA3230EE49D00B6D219 /* SiriButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriButtonDelegate.swift; sourceTree = "<group>"; };
 		37E2CEAD230F0E9600B6D219 /* VoucherIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherIntentHandler.swift; sourceTree = "<group>"; };
 		3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
@@ -109,6 +132,8 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB93009DEFF47DDB7604D95 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		B7D19B23A9009A80F372A0F9 /* libPods-Runner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Runner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,18 +152,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		379BD2AD23146659003E5EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97C146EB1CF9000F007C117D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9705A1C61CF904A100538489 /* Flutter.framework in Frameworks */,
 				3B80C3941E831B6300D905FE /* App.framework in Frameworks */,
+				CAF5E1997C80C3595A68E3ED /* libPods-Runner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3301362CCD419BCC10278407 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26AD7230B39DA8C030A46E61 /* Pods-Runner.debug.xcconfig */,
+				2B288DD7014036B66DEEBE9E /* Pods-Runner.release.xcconfig */,
+				AFB93009DEFF47DDB7604D95 /* Pods-Runner.profile.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3767BBA0230DE1A500BA3967 /* Siri */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				3767BBAA230DE1A600BA3967 /* IntentsUI.framework */,
+				B7D19B23A9009A80F372A0F9 /* libPods-Runner.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +209,19 @@
 				3767BBB2230DE1A600BA3967 /* Info.plist */,
 			);
 			path = SiriUI;
+			sourceTree = "<group>";
+		};
+		379BD2B123146659003E5EF6 /* rn */ = {
+			isa = PBXGroup;
+			children = (
+				379BD2B223146659003E5EF6 /* AppDelegate.swift */,
+				379BD2B423146659003E5EF6 /* ViewController.swift */,
+				379BD2B623146659003E5EF6 /* Main.storyboard */,
+				379BD2B92314665A003E5EF6 /* Assets.xcassets */,
+				379BD2BB2314665A003E5EF6 /* LaunchScreen.storyboard */,
+				379BD2BE2314665A003E5EF6 /* Info.plist */,
+			);
+			path = rn;
 			sourceTree = "<group>";
 		};
 		9740EEB11CF90186004384FC /* Flutter */ = {
@@ -188,8 +245,10 @@
 				97C146F01CF9000F007C117D /* Runner */,
 				3767BBA0230DE1A500BA3967 /* Siri */,
 				3767BBAC230DE1A600BA3967 /* SiriUI */,
+				379BD2B123146659003E5EF6 /* rn */,
 				3767BBA9230DE1A600BA3967 /* Frameworks */,
 				97C146EF1CF9000F007C117D /* Products */,
+				3301362CCD419BCC10278407 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -199,6 +258,7 @@
 				97C146EE1CF9000F007C117D /* Runner.app */,
 				3767BB9F230DE1A500BA3967 /* Siri.appex */,
 				3767BBA8230DE1A500BA3967 /* SiriUI.appex */,
+				379BD2B023146659003E5EF6 /* rn.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,10 +325,30 @@
 			productReference = 3767BBA8230DE1A500BA3967 /* SiriUI.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		379BD2AF23146659003E5EF6 /* rn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 379BD2C22314665A003E5EF6 /* Build configuration list for PBXNativeTarget "rn" */;
+			buildPhases = (
+				379BD2AC23146659003E5EF6 /* Sources */,
+				379BD2AD23146659003E5EF6 /* Frameworks */,
+				379BD2AE23146659003E5EF6 /* Resources */,
+				379BD2C32314666A003E5EF6 /* Bundle react Native code and images */,
+				379BD2C42314667E003E5EF6 /* Launch React Native Packager */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rn;
+			productName = rn;
+			productReference = 379BD2B023146659003E5EF6 /* rn.app */;
+			productType = "com.apple.product-type.application";
+		};
 		97C146ED1CF9000F007C117D /* Runner */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97C147051CF9000F007C117D /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
+				BA09F74B0F0F13E22AC17A24 /* [CP] Check Pods Manifest.lock */,
 				9740EEB61CF901F6004384FC /* Run Script */,
 				97C146EA1CF9000F007C117D /* Sources */,
 				97C146EB1CF9000F007C117D /* Frameworks */,
@@ -280,6 +360,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				379BD2CA23147FC4003E5EF6 /* PBXTargetDependency */,
 				3767BBB4230DE1A600BA3967 /* PBXTargetDependency */,
 				3767BBB7230DE1A600BA3967 /* PBXTargetDependency */,
 			);
@@ -306,6 +387,11 @@
 					3767BBA7230DE1A500BA3967 = {
 						CreatedOnToolsVersion = 10.3;
 						DevelopmentTeam = T96RJCPE4C;
+						ProvisioningStyle = Automatic;
+					};
+					379BD2AF23146659003E5EF6 = {
+						CreatedOnToolsVersion = 10.3;
+						DevelopmentTeam = 4FV64N95C8;
 						ProvisioningStyle = Automatic;
 					};
 					97C146ED1CF9000F007C117D = {
@@ -336,6 +422,7 @@
 				97C146ED1CF9000F007C117D /* Runner */,
 				3767BB9E230DE1A500BA3967 /* Siri */,
 				3767BBA7230DE1A500BA3967 /* SiriUI */,
+				379BD2AF23146659003E5EF6 /* rn */,
 			);
 		};
 /* End PBXProject section */
@@ -356,11 +443,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		379BD2AE23146659003E5EF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379BD2BD2314665A003E5EF6 /* LaunchScreen.storyboard in Resources */,
+				379BD2BA2314665A003E5EF6 /* Assets.xcassets in Resources */,
+				379BD2B823146659003E5EF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97C146EC1CF9000F007C117D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
+				379BD2C5231466AE003E5EF6 /* rn.app in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				9740EEB41CF90195004384FC /* Debug.xcconfig in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
@@ -371,6 +469,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		379BD2C32314666A003E5EF6 /* Bundle react Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle react Native code and images";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Type a script or drag a script file from your workspace to insert its path.\n# Bundle react Native code and images\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		379BD2C42314667E003E5EF6 /* Launch React Native Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Launch React Native Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# Launch React Native Packager\nif nc -w 5 -z localhost 8081 ; then\nif ! curl -s \"http://localhost:8081/status\" | grep -q \"packager-status:running\" ; then\necho \"Port 8081 already in use, packager is either not running or not running correctly\"\nexit 2\nfi\nelse\nopen -a Terminal $SRCROOT/../node_modules/react-native/scripts/launchPackager.command || echo \"Can't start packager automatically\"\nfi\n";
+		};
 		3B06AD1E1E4923F5004D2608 /* Thin Binary */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,7 +531,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
+			shellScript = "/bin/sh \"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build\n";
+		};
+		BA09F74B0F0F13E22AC17A24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Runner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -421,6 +577,15 @@
 				37E2CEB0230F0E9600B6D219 /* VoucherIntentHandler.swift in Sources */,
 				3767BBAE230DE1A600BA3967 /* IntentViewController.swift in Sources */,
 				37E2CEAA230F0C5600B6D219 /* Voucher.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		379BD2AC23146659003E5EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379BD2B523146659003E5EF6 /* ViewController.swift in Sources */,
+				379BD2B323146659003E5EF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +616,11 @@
 			target = 3767BB9E230DE1A500BA3967 /* Siri */;
 			targetProxy = 3767BBB6230DE1A600BA3967 /* PBXContainerItemProxy */;
 		};
+		379BD2CA23147FC4003E5EF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 379BD2AF23146659003E5EF6 /* rn */;
+			targetProxy = 379BD2C923147FC4003E5EF6 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -460,6 +630,22 @@
 				3767BBB0230DE1A600BA3967 /* Base */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		379BD2B623146659003E5EF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				379BD2B723146659003E5EF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		379BD2BB2314665A003E5EF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				379BD2BC2314665A003E5EF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		97C146FA1CF9000F007C117D /* Main.storyboard */ = {
@@ -711,6 +897,81 @@
 			};
 			name = Profile;
 		};
+		379BD2BF2314665A003E5EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FV64N95C8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = rn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.dan.sirishortcut.rn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		379BD2C02314665A003E5EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FV64N95C8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = rn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.dan.sirishortcut.rn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		379BD2C12314665A003E5EF6 /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4FV64N95C8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = rn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = br.dan.sirishortcut.rn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Profile;
+		};
 		97C147031CF9000F007C117D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9740EEB21CF90195004384FC /* Debug.xcconfig */;
@@ -902,6 +1163,16 @@
 				3767BBBE230DE1A600BA3967 /* Debug */,
 				3767BBBF230DE1A600BA3967 /* Release */,
 				3767BBC0230DE1A600BA3967 /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		379BD2C22314665A003E5EF6 /* Build configuration list for PBXNativeTarget "rn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				379BD2BF2314665A003E5EF6 /* Debug */,
+				379BD2C02314665A003E5EF6 /* Release */,
+				379BD2C12314665A003E5EF6 /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

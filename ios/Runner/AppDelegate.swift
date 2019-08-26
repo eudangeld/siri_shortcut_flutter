@@ -6,12 +6,14 @@ import Intents
 @objc class AppDelegate: FlutterAppDelegate {
     
     
+    
+    
+    
     override func application(_ application: UIApplication, handle intent: INIntent, completionHandler: @escaping (INIntentResponse) -> Void) {
         guard
             intent is VoucherIntent else{
                 return
         }
-        
         let siriButtoncontroller = SiriButtonDelegate()
         let rootViewController = window.rootViewController as? UINavigationController
         rootViewController!.pushViewController(siriButtoncontroller, animated: true)
@@ -23,23 +25,33 @@ import Intents
 
     
   override func application(
+    
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?
   ) -> Bool {
+    
+    
     GeneratedPluginRegistrant.register(with: self)
-    initFlutterChannel()
+    let rnmoduleNmae = "rnmodule"
+    let initialProps : [String:Any] = [:]
+    let bundlern =  RCTBundleURLProvider.sharedSettings()?.jsBundleURL(forBundleRoot: "src/index", fallbackResource: nil)
+    let view = RCTRootView(bundleURL: bundlern, moduleName: rnmoduleNmae, initialProperties: initialProps, launchOptions: launchOptions)
+    initFlutterChannel(view:view!)
 
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
     
     
-    
-    
-    public func initFlutterChannel(){
+    public func initFlutterChannel(view:RCTRootView ){
+        
         
         let flutterViewCOntroller :FlutterViewController = window?.rootViewController as! FlutterViewController
         let channel = FlutterMethodChannel(name: "dan.flutter.intent/siri", binaryMessenger: flutterViewCOntroller as FlutterBinaryMessenger)
         let navController = UINavigationController(rootViewController: flutterViewCOntroller)
+        let controller = UIViewController()
+        controller.view = view
+        
+        
         navController.isNavigationBarHidden = true
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
@@ -50,6 +62,9 @@ import Intents
             if call.method=="donateShortCut"{
                 self.doneteShortCut()
                 navController.pushViewController(siriButtoncontroller, animated: true)
+            }
+            else if call.method=="callreactnative"{
+                navController.pushViewController(controller, animated: true)
             }
             else{
                 result(FlutterMethodNotImplemented)

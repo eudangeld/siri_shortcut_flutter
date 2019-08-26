@@ -1,0 +1,21 @@
+{
+  "name": "fluiview",
+  "version": "1.0.0",
+  "description": "Fluiview experience",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "postinstall": "cd ios; pod install; cd ../android; ./gradlew"
+  },
+  "author": "Dannylo Dangel",
+  "license": "ISC",
+  "dependencies": {
+    "react": "16.2.0",
+    "react-native": "0.54.3"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-preset-react-native": "4.0.0"
+  }
+}

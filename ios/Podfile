@@ -1,0 +1,27 @@
+target 'Runner' do
+    react_native = "../node_modules/react-native"
+    third_party = "#{react_native}/third-party-podspecs"
+    pod 'yoga', :path => "#{react_native}/ReactCommon/yoga"
+    pod 'DoubleConversion', :podspec => "#{third_party}/DoubleConversion.podspec"
+    pod 'glog', :podspec => "#{third_party}/GLog.podspec"
+    pod 'Folly', :podspec => "#{third_party}/Folly.podspec"
+    pod 'React', path: "#{react_native}",
+       subspecs: %w(
+                Core
+                ART
+                CxxBridge
+                DevSupport
+                RCTActionSheet
+                RCTAnimation
+                RCTCameraRoll
+                RCTGeolocation
+                RCTImage
+                RCTLinkingIOS
+                RCTNetwork
+                RCTPushNotification
+                RCTSettings
+                RCTText
+                RCTVibration
+                RCTWebSocket
+                )
+end
