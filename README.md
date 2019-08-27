@@ -2,5 +2,6 @@
 
 A new Gohorse project.
 
-## Using Flutter and React native 
-This project is a project using Flutter and react native for nothing
+## Using Flutter and React native
+
+This project use Flutter and react native for nothing
