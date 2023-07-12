@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "react": "16.2.0",
-    "react-native": "0.54.3"
+    "react-native": "0.72.2"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
